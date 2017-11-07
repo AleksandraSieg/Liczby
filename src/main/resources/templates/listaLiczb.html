@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <th:block th:each="liczba : ${liczby}">
+        <tr>
+            <td th:text="${liczba.liczba1}"/>
+            <td th:text="${liczba.liczba2}"/>
+
+        </tr>
+    </th:block>
+</table>
+
+</body>
+</html>
